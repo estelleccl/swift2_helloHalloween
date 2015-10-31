@@ -15,12 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="f4z-Ff-weM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happy Halloween" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHw-Xd-OxA">
+                                <rect key="frame" x="66" y="34" width="283" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-gM-Z8s">
+                                <rect key="frame" x="43" y="122" width="100" height="30"/>
+                                <state key="normal" title="Hi"/>
+                                <connections>
+                                    <action selector="sayHi:" destination="IoJ-Yo-mFM" eventType="touchUpInside" id="Nmj-7F-i2f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8P-JD-aKe">
+                                <rect key="frame" x="151" y="122" width="100" height="30"/>
+                                <state key="normal" title="Bye"/>
+                                <connections>
+                                    <action selector="saybye" destination="IoJ-Yo-mFM" eventType="touchUpInside" id="GSX-BU-FT3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="byeButton" destination="Z8P-JD-aKe" id="Xkb-eC-1NA"/>
+                        <outlet property="helloLabel" destination="wHw-Xd-OxA" id="Jvb-7y-TOi"/>
+                        <outlet property="hiButton" destination="Rge-gM-Z8s" id="Z1R-iP-KW7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJQ-v4-vkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="35"/>
+            <point key="canvasLocation" x="189" y="73"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cAt-O6-9aF">
