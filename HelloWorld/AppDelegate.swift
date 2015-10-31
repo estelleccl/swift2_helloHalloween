@@ -16,20 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        //manual-way
-//        window = UIWindow()
-//        window?.makeKeyAndVisible()
-//        window?.backgroundColor = UIColor.blueColor()
-        
-        //Set root view controller
-//        window?.rootViewController = HelloViewController
-        
-        //manual-way
-//        let helloVC: HelloViewController = HelloViewController()
-//        window?.rootViewController = helloVC
-        
-        
         return true
     }
 
