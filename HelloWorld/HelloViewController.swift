@@ -18,7 +18,7 @@ class HelloViewController: UIViewController {
         super.viewDidLoad()
         
         //Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.lightGrayColor()
+//        self.view.backgroundColor = UIColor.lightGrayColor()
         
 //        let helloLabel: UILabel = UILabel(frame: CGRect(x: 20, y: 20, width: 200, height: 150))
         helloLabel = UILabel(frame: CGRect(x: 20, y: 20, width: 200, height: 150))
