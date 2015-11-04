@@ -14,6 +14,7 @@
 		160267AA1BE46B9200B74DE0 /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160267A91BE46B9200B74DE0 /* HelloWorldUITests.swift */; };
 		160267B81BE46E8F00B74DE0 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160267B71BE46E8F00B74DE0 /* HelloViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		160267BA1BE4A70E00B74DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160267B91BE4A70E00B74DE0 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		160267BC1BE4FE9B00B74DE0 /* HalloweenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160267BB1BE4FE9B00B74DE0 /* HalloweenViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		160267AB1BE46B9200B74DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		160267B71BE46E8F00B74DE0 /* HelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 		160267B91BE4A70E00B74DE0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		160267BB1BE4FE9B00B74DE0 /* HalloweenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalloweenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				160267891BE46B9100B74DE0 /* AppDelegate.swift */,
 				160267B71BE46E8F00B74DE0 /* HelloViewController.swift */,
+				160267BB1BE4FE9B00B74DE0 /* HalloweenViewController.swift */,
 				160267901BE46B9200B74DE0 /* Assets.xcassets */,
 				160267921BE46B9200B74DE0 /* LaunchScreen.storyboard */,
 				160267951BE46B9200B74DE0 /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				1602678A1BE46B9100B74DE0 /* AppDelegate.swift in Sources */,
 				160267B81BE46E8F00B74DE0 /* HelloViewController.swift in Sources */,
+				160267BC1BE4FE9B00B74DE0 /* HalloweenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
