@@ -20,7 +20,7 @@ class HalloweenViewController: UIViewController {
     
     @IBOutlet weak var colorSlide: UISlider!
     
-    @IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var background: UIView!
     
     var ctr: Int = 0;
     
@@ -102,7 +102,7 @@ class HalloweenViewController: UIViewController {
         
         newBackgroundColor = UIColor(hue: sliderValue, saturation: 0.5, brightness: 0.5, alpha: 0.5)
         
-        colorView.backgroundColor = newBackgroundColor
+        background.backgroundColor = newBackgroundColor
         submitBtn.backgroundColor = newBackgroundColor
         runAwayBtn.backgroundColor = newBackgroundColor
         

@@ -177,7 +177,7 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="changeBackgroundColor:" destination="qHR-Bi-DfZ" eventType="valueChanged" id="y5f-7S-VkR"/>
+                                            <action selector="changeBackgroundColor:" destination="qHR-Bi-DfZ" eventType="valueChanged" id="zyG-SP-sgd"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -300,8 +300,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="background" destination="ve0-fY-Zpv" id="lbE-vz-6zc"/>
                         <outlet property="colorSlide" destination="ymx-aB-dcz" id="Ryn-qH-Men"/>
-                        <outlet property="colorView" destination="ve0-fY-Zpv" id="ayD-Xn-Q0l"/>
                         <outlet property="respondLabel" destination="H7q-pm-VB0" id="Ywd-1h-Y9t"/>
                         <outlet property="respondText" destination="MKF-xb-txP" id="MXX-at-hwq"/>
                         <outlet property="runAwayBtn" destination="ltN-N5-3QL" id="T5D-DS-VLt"/>
