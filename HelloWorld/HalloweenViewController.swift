@@ -18,11 +18,11 @@ class HalloweenViewController: UIViewController {
     
     @IBOutlet weak var respondText: UITextField!
     
-    @IBOutlet weak var colorSlide: UISlider!
+    @IBOutlet weak var colorSlider: UISlider!
     
-    @IBOutlet weak var background: UIView!
+    @IBOutlet weak var backgroundUIView: UIView!
     
-    var ctr: Int = 0;
+    var counter: Int = 0;
     
     
     override func viewDidLoad() {
@@ -37,59 +37,59 @@ class HalloweenViewController: UIViewController {
     }
     
     @IBAction func respond(sender: UIButton) {
-        if (ctr == 0){
+        if (counter == 0){
             respondLabel?.text = "Follow me \(respondText!.text!). I'm bringing you to the livingroom and show you to everyone"
-            ctr += 1
+            counter += 1
         }
-        else if (ctr == 1){
+        else if (counter == 1){
             respondLabel?.text = "Boo!!! A Ghost float by. What do you want to say to the Ghost"
-            ctr += 1
+            counter += 1
         }
-        else if (ctr == 2){
+        else if (counter == 2){
             respondLabel?.text = "Hi, I'm Casper the Happy Ghost, Everyone is waiting for you... Let's Go"
-            ctr += 1
+            counter += 1
         }
-        else if (ctr == 3){
+        else if (counter == 3){
             respondLabel?.text = "Surprise!!! Welcome to iOS hunted house!!! Trick or Treat?"
-            ctr += 1
+            counter += 1
         }
-        else if (ctr == 4 && (respondText!.text! == "Trick" || respondText!.text! == "trick")){
+        else if (counter == 4 && (respondText!.text! == "Trick" || respondText!.text! == "trick")){
             respondLabel?.text = "You are push out the window!!!"
-            ctr += 1
+            counter += 1
         }
-        else if (ctr == 4 && (respondText!.text! == "Treat" || respondText!.text! == "treat")){
+        else if (counter == 4 && (respondText!.text! == "Treat" || respondText!.text! == "treat")){
             respondLabel?.text = "You are eaten!!! Wahahaha!!!"
-            ctr += 1
+            counter += 1
         }
-        else if (ctr == 4){
+        else if (counter == 4){
             respondLabel?.text = "You are eaten!!! Wahahaha!!"
-            ctr += 8
+            counter += 8
         }
-        else if (ctr == 10){
+        else if (counter == 10){
             respondLabel?.text = "You got kick out of the house!!! Don't come back or we will eat you"
-            ctr += 1
+            counter += 1
         }
-        else if (ctr == 11){
+        else if (counter == 11){
             respondLabel?.text = "Chasing after you!!! You are eaten!!! Welcome to our family"
-            ctr += 1
+            counter += 1
         }
-        else if (ctr > 11){
+        else if (counter > 11){
             respondLabel?.text = "You are dead!!! You are stuck with us!!! Wahahhaha!!! Welcome to our family..."
         }
     }
     
     @IBAction func runAway(sender: AnyObject) {
-        if (ctr < 11){
+        if (counter < 11){
             respondLabel?.text = "You got kick out of the house!!! Don't come back or we will eat you"
-            ctr = 11
+            counter = 11
             submitBtn.enabled = false
             submitBtn.hidden = true
         }
-        else if (ctr == 11){
+        else if (counter == 11){
             respondLabel?.text = "Chasing after you!!! You are eaten!!! You are dead!!! You are stuck with us!!! Wahahhaha!!! Welcome to our family..."
-            ctr += 10
+            counter += 10
         }
-        else if (ctr > 20){
+        else if (counter > 20){
             respondLabel?.text = "You are dead!!! You are stuck with us!!! Let's hunt somemore human!!!"
         }
     }
@@ -102,7 +102,7 @@ class HalloweenViewController: UIViewController {
         
         newBackgroundColor = UIColor(hue: sliderValue, saturation: 0.5, brightness: 0.5, alpha: 0.5)
         
-        background.backgroundColor = newBackgroundColor
+        backgroundUIView.backgroundColor = newBackgroundColor
         submitBtn.backgroundColor = newBackgroundColor
         runAwayBtn.backgroundColor = newBackgroundColor
         
